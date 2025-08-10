@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ASC 공식 홈페이지{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('about') }}">소개</a></li>
+            <li><a href="{{ url_for('rules') }}">회칙</a></li>
+            <li><a href="{{ url_for('join') }}">가입안내</a></li>
+            <li><a href="{{ url_for('team') }}">조직도</a></li>
+            <li><a href="{{ url_for('sns') }}">SNS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <p><img src="{{ url_for('static', filename='img/asc_logo.png') }}" alt="ASC로고" width="120px" height="120px"></p>
+        <h1>ASC</h1>
+        <p>창의와 열정으로 함께하는 연세대학교 미래캠퍼스 중앙학술동아리</p>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
