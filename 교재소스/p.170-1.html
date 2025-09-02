@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            background-color: rgb(221,231,203);
+            display: inline-block;
+            margin: 10px 10px 10px 10px;
+            /* 위 한줄을 따로 지정하면 아래와 같음
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            */
+        }
+        .leaf1 {
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            background: radial-gradient(circle at 100% 100%, white, rgb(151,180,151) 40%, green);
+        }
+        .leaf2 {
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background: radial-gradient(circle at 0% 100%, white, rgb(151,180,151) 40%, green);
+        }
+        .leaf3 {
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background: radial-gradient(circle at 100% 0%, white, rgb(151,180,151) 40%, green);
+        }
+        .leaf4 {
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            background: radial-gradient(circle at 0% 0%, white, rgb(151,180,151) 40%, green);
+        }
+    </style>
+</head>
+<body>
+    <div class="leaf1"></div>
+    <div class="leaf2"></div>
+    <div class="leaf3"></div>
+    <div class="leaf4"></div>
+</body>
+</html>

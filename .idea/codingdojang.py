@@ -3,10 +3,6 @@
 # and
 # integrate systems more effectively."""
 # print(s)
-from cgitb import html
-
-from absl.logging.converter import string_to_standard
-from jinja2 import meta
 
 # 단어 개수 세서 최빈값 구함
 # word = input().upper()
@@ -111,4 +107,29 @@ from jinja2 import meta
 # for i in word:
 #     hap = hap + alpha_to_index[i] + 3
 # print(hap)
+
+# N = int(input())
+#
+# for i in range(1,10):
+#     print(f'{N} * {i} = {N*i}')
+
+# class Calculator:
+#     def __init__(self):
+#         self.value = 0
+#
+#     def add(self, val):
+#         self.value += val
+#
+# class UpgradeCalculator(Calculator):
+#     def minus(self, val):
+#         self.value -= val
+#
+# class MaxLimitCalculator(Calculator):
+#     def add(self, val):
+#         self.value += val
+#         if self.value > 100:
+#             self.value = 100
+#
+# # print(chr(ord('a')) == 'a')
+#
 

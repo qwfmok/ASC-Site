@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Flex</title>
+	<style>
+        #container {
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            border: 2px solid gray;
+        }	
+		#container div {
+			width:200px;
+			border: 2px solid #78b4809c;
+			background:#78b4804f;
+		}
+		h2 {
+			text-align:center;
+			color: rgba(0, 4, 255, 0.521);
+		}
+		#container h2 {
+			font-size:20px;
+			font-weight:bold;
+			padding:20px;
+			color: black;
+		}	</style>
+</head>
+<body>
+	<h2>flex-wrap : wrap</h2>
+	<div id="container">
+		<div id="box1"><h2>첫번째</h2></div>
+		<div id="box2"><h2>두번째</h2></div>
+		<div id="box3"><h2>세번째</h2></div>
+	</div>
+</body>
+</html>

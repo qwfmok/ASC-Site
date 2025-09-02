@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Flex</title>
+	<style>
+		#container {
+			width: 500px;
+			height: 100px;
+			margin: 0 auto 20px;
+			display: flex;
+			align-items:center;
+			border: 2px solid gray;
+		}			
+		#container div {
+			width:100px;
+			height:50px;
+			border: 2px solid #78b4809c;
+			background:#78b4804f;
+		}
+        #box1 {
+            -ms-flex: 1 1 0;
+            -webkit-flex: 1 1 0;
+            flex: 1 1 0;
+        }
+        #box2 {
+            -ms-flex: 2 2 0;
+            -webkit-flex: 2 2 0;
+            flex: 2 2 0;
+        }
+		h2 {
+			text-align:center;
+			color: rgba(0, 4, 255, 0.521);
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h2>flex</h2>
+	<div id="container">
+		<div id="box1"><p>첫번째</p></div>
+		<div id="box2"><p>두번째</p></div>
+		<div id="box3"><p>세번째</p></div>
+	</div>
+</body>
+</html>

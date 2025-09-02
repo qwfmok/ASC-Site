@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Flex : align-content</title>
+	<style>
+        .wrapper {
+            width: 500px;
+            height: 150px;
+            margin: 0 auto 20px;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            border: 2px solid gray;
+        }
+        #container1 {
+            -ms-align-content: flex-start;
+            -webkit-align-content: flex-start;
+            align-content: flex-start;
+        }
+        #container2 {
+            -ms-align-content: flex-end;
+            -webkit-align-content: flex-end;
+            align-content: flex-end;
+        }
+        #container3 {
+            -ms-align-content: center;
+            -webkit-align-content: center;
+            align-content: center;
+        }
+        #container4 {
+            -ms-align-content: space-between;
+            -webkit-align-content: space-between;
+            align-content: space-between;
+        }
+        #container5 {
+            -ms-align-content: space-around;
+            -webkit-align-content: space-around;
+            align-content: space-around;
+        }						
+		.wrapper div {
+			width:200px;
+			border: 2px solid #78b4809c;
+			background:#78b4804f;
+		}
+		h2 {
+			text-align:center;
+			color: rgba(0, 4, 255, 0.521);
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h2>align-content : flex-start</h2>
+	<div id="container1" class="wrapper">
+		<div><p>첫번째</p></div>
+		<div><p>두번째</p></div>
+		<div><p>세번째</p></div>
+	</div>
+	<h2>align-content : flex-end</h2>
+	<div id="container2" class="wrapper">
+		<div><p>첫번째</p></div>
+		<div><p>두번째</p></div>
+		<div><p>세번째</p></div>
+	</div>
+	<h2>align-content : center</h2>
+	<div id="container3" class="wrapper">
+		<div><p>첫번째</p></div>
+		<div><p>두번째</p></div>
+		<div><p>세번째</p></div>
+	</div>
+	<h2>align-content : space-between</h2>
+	<div id="container4" class="wrapper">
+		<div><p>첫번째</p></div>
+		<div><p>두번째</p></div>
+		<div><p>세번째</p></div>
+	</div>
+	<h2>align-content : space-around</h2>
+	<div id="container5" class="wrapper">
+		<div><p>첫번째</p></div>
+		<div><p>두번째</p></div>
+		<div><p>세번째</p></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지 크기</title>
+    <style>
+        h1 {
+            width: 500px; height: 400px; color: black;
+            background-clip: border-box;
+            background-color: gray;
+            background-image: url(image/pattern.jpg);
+            border: 10px dotted aqua;
+        }
+        .background-auto {
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+        .background-contain {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .background-cover {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-percent {
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+        }
+        .background-fixed {
+            background-size: 500px 200px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="background-auto">
+        background-size : auto;
+    </h1>    
+    <h1 class="background-contain">
+        background-size : contain;
+    </h1>    
+    <h1 class="background-cover">
+        background-size : cover;
+    </h1>    
+    <h1 class="background-percent">
+        background-size : 50% 100%;
+    </h1>    
+    <h1 class="background-fixed">
+        background-size : 500px 200px;
+    </h1>    
+</body>
+</html>

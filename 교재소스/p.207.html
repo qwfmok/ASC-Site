@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .header{
+            width: 100%;
+            background-color: rgba(0, 0, 255, 0.062);
+            height: 40px;
+        }
+        .content{
+            width: 73%;
+            background-color: rgba(0, 128, 0, 0.151);
+            height: 690px;
+            float: left;
+        }
+        .side{
+            width: 27%;
+            background-color: rgba(0, 128, 0, 0.384);
+            height: 690px;
+            float: right;
+        }
+        .footer{
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0.192);
+            height: 30px;
+            clear: both;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="content">
+            <section>
+                <picture>
+                    <source srcset="image/swim1023.png" media="(min-width: 1024px)">
+                    <source srcset="image/swim600.png" media="(min-width: 768px)">
+                    <source srcset="image/swim320.png" media="(min-width: 320px)">
+                    <img src="image/swim320." alt="swimming" style="width: 100%;">
+                </picture>
+            </section>
+        </div>
+        <div class="side"></div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

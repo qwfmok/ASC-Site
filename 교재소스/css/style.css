@@ -1,0 +1,70 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+#container {
+	width:100%;
+}
+header {
+	width:100%;			
+}
+header h1 {
+  padding: 10px;
+  font-size:2em;
+  text-align: center;
+  height: 70px;
+  color: rgba(0, 4, 255, 0.521);
+}
+#cards {
+	width:100%;         
+}
+#cards > div {
+  position:relative;
+  height:350px;
+  border:1px solid black;
+   margin-bottom:15px;
+}
+#card1, #card2, #card3, #card4, #card5 {
+  width:100%;
+}
+#cards h2 {
+  position:absolute;
+  padding:5px;
+  font-size:2em;
+  color:white;
+  text-shadow:3px 3px 5px black;
+  right:3%;
+  top:10px;
+}
+#card1 {
+  background:url("../image/library.png") no-repeat center;
+  background-size:cover;
+}
+#card2 {
+  background:url("../image/road.png") no-repeat center;
+  background-size:cover;
+}
+ #card3 {
+  background:url("../image/theater.png") no-repeat center;
+  background-size:cover;
+}
+#card4 {
+  background:url("../image/union.png") no-repeat center;
+  background-size:cover;
+}
+#card5 {
+  background:url("../image/dormitory.png") no-repeat center;
+  background-size:cover;
+}
+footer {
+  width:100%;
+  background:#78b4804f;
+  height:70px;
+}
+footer p {
+  padding: 25px;
+  font-size:0.7em;
+  color:black;
+  text-align:center;
+}
